@@ -1,0 +1,104 @@
+@media (max-width: 600px) {
+  .clock {
+    width: 20rem;
+    height: 20rem;
+  }
+  .clock .number {
+    font-size: 1.5rem;
+  }
+  .hand {
+    width: 40%;
+    height: 3px;
+  }
+}
+
+html {
+    background:#ffffff url(http://unsplash.it/1500/1000?image=881&blur=50);
+    background-size:cover;
+    font-family:'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    display:flex;
+    flex:1;
+    min-height: 50vh;
+    align-items: center;
+  }
+/* General Clock  */
+  .clock {
+    width: 30rem;
+    height: 30rem;
+    border:10px solid white;
+    border-radius:50%;
+    margin:50px auto;
+    position: relative;
+    padding:2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .clock .number {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    transform-origin: center center;
+    text-align: center;
+  }
+  /* Numbers on the clock  */
+  .number-12 { top: 5%; left: 50%; transform: translateX(-50%); }
+  .number-3 { top: 50%; right: 5%; transform: translateY(-50%); }
+  .number-6 { bottom: 5%; left: 50%; transform: translateX(-50%); }
+  .number-9 { top: 50%; left: 5%; transform: translateY(-50%); }
+  /* The clock face  */
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+  }
+    /* standard hand colors transforms n withs   */
+  .hand {
+    width:50%;
+    height:5px;
+    background:rgb(0, 0, 0);
+    position: absolute;
+    top:50%;
+    transform-origin: 90%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  /* second hand colors n withs   */
+  .second-hand {
+    width: 40px; 
+    height: 4px;
+    background: rgb(255, 0, 0); 
+}
+  
+/* Hour hand colors n withs   */
+.hour-hand {
+    width: 50%; 
+    height: 7px;
+    background: rgb(0, 0, 0); 
+}
+
+/*inner circle colors n withs */
+.inner-circle {
+    position: absolute;  
+    width: 90px;         
+    height: 90px;        
+    border-radius: 50%;  
+    background-color: rgba(185, 185, 185, 0.5); 
+    top: 37%;            
+    left: 4%;           
+    
+  }
+  
