@@ -1,25 +1,25 @@
-# Analoge Uhr
+# Analog Clock
 
-Eine analoge Uhr, die die aktuelle Zeit anzeigt, mit Zeigern für Stunden, Minuten und Sekunden, animiert durch JavaScript.
+An analog clock that displays the current time with hour, minute, and second hands animated using JavaScript.
 
 ## Features
 
-- Dynamische Zeigerbewegung basierend auf der Systemzeit.
-- Responsive Design.
+- Dynamic hand movement based on the system time.
+- Responsive design.
 
 ## Installation
 
-1. **Code klonen:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Jann08/analog-Clock.git
    ```
-2. **Datei öffnen:**
-   Öffne `index.html` in deinem Browser.
+2. **Open the file:**
+   Open `index.html` in your browser.
 
-## Anpassungen
+## Customization
 
-- **Farben, Größe und Hintergrund** können in der CSS-Datei geändert werden.
+- **Colors, size, and background** can be adjusted in the CSS file.
 
-## Autor
+## Author
 
 Jann Neururer
